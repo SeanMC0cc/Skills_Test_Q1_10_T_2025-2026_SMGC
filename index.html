@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skills test #1</title>
+
+        <!--pyscript-->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--Css-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="https://seanmc0cc.github.io/Seatwork_2_Q1_10_T_2025-2026_SMGC/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Order Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://seanmc0cc.github.io/Project_Q1_10_T_Sean_2025_2026_SMGC/">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Food Ordering System</h1>
+            <div class="menu">
+                <h2>Menu:</h2>
+                <label><input type="checkbox" value="ramen" id="ramen" data-price="300.00"> Miso ramen (₱300.00)</label><br>
+                <label><input type="checkbox" value="cake" id="cake" data-price="150.00"> Matcha cake (₱150.00)</label><br>
+                <label><input type="checkbox" value="curry" id="curry" data-price="250.00"> Chicken curry (₱250.00)</label><br>
+                <label><input type="checkbox" value="Tea" id="Tea" data-price="80"> Iced Tea (₱80)</label><br>
+                <label><input type="checkbox" value="Sparkling_Water" id="Sparkling_Water" data-price="60"> Sparkling Water (₱60)</label><br>
+            </div>
+            <div class="customer">
+                <h2>Customer Details:</h2>
+                <input type="text" id="name" placeholder="Enter your name"><br>
+                <input type="text" id="address" placeholder="Enter your address"><br>
+                <input type="text" id="contact" placeholder="Enter your contact number"><br>
+                <input type="button" class="button" value="Create order" py-click="create_order">
+            </div>
+
+            <h1>Order Summary:</h1>
+            <div id="output"></div>
+
+        </main>
+        <py-script src="main.py"></py-script>
+    </body>
+</html>
