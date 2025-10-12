@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #7798d0d9;
+    color: #2f2d2a;
+}
+/* Navbar */
+.navbar {
+    background-color: #95afdd;
+    padding: 10px 40px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link.active {
+    background: white;
+    color: black !important;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+h1{
+    text-align: center;
+    color: #c8ebec;
+}
+
+.menu, .customer {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input, button {
+    margin: 5px 0;
+    padding: 8px;
+    width: 250px;
+}
+
+.button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+#output {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #eef;
+    border-radius: 8px;
+    white-space: pre-line;
+    margin-left: 200px;
+    margin-right: 200px;
+}
